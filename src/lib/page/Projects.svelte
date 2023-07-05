@@ -1,9 +1,11 @@
+<script lang="ts">
+	import Comment from '$lib/components/Comment.svelte';
+</script>
+
 <section class="py-20 lg:py-40 border-b border-dark-600">
 	<div class="text-center mb-10">
 		<h2 class="text-4xl text-bright-300 text-shadow-glow sm:text-6xl">## PROJECTS</h2>
-		<span class="block text-dark-400"
-			>// await github.getAll(&#123; filter: "highlighted" &#125;)</span
-		>
+		<Comment>// await github.getAll(&#123; filter: "highlighted" &#125;)</Comment>
 	</div>
 
 	<ul>

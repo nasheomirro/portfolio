@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Comment from '$lib/components/Comment.svelte';
 	import Emoticon from '$lib/components/Emoticon.svelte';
 	import Eye from '$lib/components/Eye.svelte';
 </script>
@@ -13,11 +14,13 @@
 	</div>
 
 	<div class="mb-6">
-		<h2 class="text-4xl sm:text-6xl">
-			<span class="text-bright-300"> ## </span>
-			About me
-		</h2>
-		<span class="block mb-4 text-dark-400">// summarize(life.currentPosition)</span>
+		<div class="mb-4">
+			<h2 class="text-4xl sm:text-6xl">
+				<span class="text-bright-300"> ## </span>
+				About me
+			</h2>
+			<Comment>// summarize(life.currentPosition)</Comment>
+		</div>
 
 		<p class="text-lg lg:text-xl">
 			I live in the Philippines, I am a self-thought dev and I like to code. I mostly work at the
@@ -27,12 +30,12 @@
 	</div>
 
 	<div>
-		<h3 class="text-2xl sm:text-4xl">
-			<span class="text-bright-400">###</span> Skills
-		</h3>
-		<span class="block mb-4 text-dark-400"
-			>// life.skills.sortBy("importance", "desc").slice(0, 4)</span
-		>
+		<div class="mb-4">
+			<h3 class="text-2xl sm:text-4xl">
+				<span class="text-bright-400">###</span> Skills
+			</h3>
+			<Comment>// life.skills.sortBy("importance", "desc").slice(0, 4)</Comment>
+		</div>
 		<ul class="sm:ml-2 list-disc pl-2 sm:pl-4 text-lg lg:text-xl">
 			<li>
 				Understand how to manage my time, I know that it's okay for it to just be
