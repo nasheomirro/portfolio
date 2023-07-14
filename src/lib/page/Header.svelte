@@ -2,10 +2,10 @@
 	import Comment from '$lib/components/Comment.svelte';
 </script>
 
-<header class="py-32 sm:py-40 flex flex-col items-center">
+<header id="home" class="pt-32 sm:pt-40 flex flex-col items-center">
 	<h1 class="mb-4 text-center">
 		<Comment>// hello there, I'm shane and I'm a</Comment>
-		<span class="text-shadow-glow text-bright-300 text-5xl sm:text-7xl block">#WEB DEVELOPER</span>
+		<span class="text-shadow-glow z-0 text-bright-300 text-5xl sm:text-7xl flicker block">#WEB DEVELOPER</span>
 	</h1>
 	<div class="w-60 sm:w-80 text-center">
 		<img
@@ -18,3 +18,33 @@
 		</div>
 	</div>
 </header>
+
+<style>
+	.flicker {
+    animation: flicker 3s infinite alternate;
+	}
+
+  @media (prefers-reduce-motion) {
+    .flicker {
+      animation: none;
+    }
+  }
+
+	@keyframes flicker {
+		0%,
+		18%,
+		22%,
+		25%,
+		53%,
+		57%,
+		100% {
+      opacity: 1;
+		}
+
+		20%,
+		24%,
+		55% {
+      opacity: 0.7;
+		}
+	}
+</style>

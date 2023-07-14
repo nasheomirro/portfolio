@@ -27,7 +27,8 @@
 </script>
 
 <span
-	class="cursor-default"
+	class="cursor-default select-none"
+	class:text-shadow-glow={hovering}
 	role="none"
 	on:mouseenter={() => (hovering = true)}
 	on:mouseleave={() => (hovering = false)}

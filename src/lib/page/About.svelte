@@ -2,10 +2,11 @@
 	import Comment from '$lib/components/Comment.svelte';
 	import Emoticon from '$lib/components/Emoticon.svelte';
 	import Eye from '$lib/components/Eye.svelte';
+	import Highlight from '$lib/components/Highlight.svelte';
 </script>
 
-<section class="pb-20 grid grid-cols-1 sm:pr-10 lg:pr-60 gap-7 relative border-b border-dark-600">
-	<div class="text-xl sm:text-3xl absolute right-0 top-0">
+<section id="about" class="py-20 sm:py-28 grid grid-cols-1 sm:pr-10 lg:pr-60 gap-7 relative border-b border-dark-600">
+	<div class="text-xl sm:text-3xl absolute right-0 top-0 sm:top-5">
 		<Emoticon>
 			<span slot="hovering"><Eye>&gt;</Eye> _ <Eye>&lt;</Eye></span>
 			<span slot="opened"><Eye>o</Eye> _ <Eye>o</Eye></span>
@@ -34,24 +35,24 @@
 			<h3 class="text-2xl sm:text-4xl">
 				<span class="text-bright-400">###</span> Skills
 			</h3>
-			<Comment>// life.skills.sortBy("importance", "desc").slice(0, 4)</Comment>
+			<Comment>// life.skills.sortBy("importance", "desc").slice(0, 5)</Comment>
 		</div>
 		<ul class="sm:ml-2 list-disc pl-2 sm:pl-4 text-lg lg:text-xl">
 			<li>
-				Understand how to manage my time, I know that it's okay for it to just be
-				<span class="text-highlight-400"> "good enough". </span>
+				Adaptable in time crunches, sometimes <Highlight>"good enough"</Highlight> is better than great.
 			</li>
 			<li>
-				comfortable working with and learning <span class="text-highlight-400">
-					unfamiliar tools and frameworks</span
+				comfortable learning and working with <Highlight>
+					unfamiliar tools and frameworks</Highlight
 				>.
 			</li>
 			<li>
-				had experienced maintaining old websites, maneuvering around <span class="text-bright-600"
-					>bloated CSS</span
+				had experienced maintaining old websites, maneuvering around <Highlight color="negative"
+					>bloated CSS</Highlight
 				>.
 			</li>
 			<li>had experienced converting designs to responsive production-ready web pages.</li>
+      <li>able to mimic designs to create pages that matches a website's theme.</li>
 		</ul>
 	</div>
 </section>

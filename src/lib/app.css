@@ -7,6 +7,10 @@
 	src: url('/fonts/VT323-Regular.ttf') format('truetype');
 }
 
+html {
+  @apply scroll-smooth;
+}
+
 body {
-  @apply font-body bg-dark-900 text-dim-50;
+  @apply font-body bg-dark-900 text-dim-50 scroll-smooth;
 }
