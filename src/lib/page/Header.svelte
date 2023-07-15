@@ -5,7 +5,12 @@
 <header id="home" class="pt-32 sm:pt-40 flex flex-col items-center">
 	<h1 class="mb-4 text-center">
 		<Comment>// hello there, I'm shane and I'm a</Comment>
-		<span class="text-shadow-glow z-0 text-bright-300 text-5xl sm:text-7xl flicker block">#WEB DEVELOPER</span>
+		<span class="text-shadow-glow z-0 text-bright-300 text-5xl sm:text-7xl relative block">
+			<div
+				class="bg-dark-900 flicker absolute top-1/2 left-1/2 w-[110%] h-[110%] -translate-x-1/2 -translate-y-1/2"
+			/>
+			#WEB DEVELOPER
+		</span>
 	</h1>
 	<div class="w-60 sm:w-80 text-center">
 		<img
@@ -21,14 +26,14 @@
 
 <style>
 	.flicker {
-    animation: flicker 3s infinite alternate;
+		animation: flicker 3s infinite alternate;
 	}
 
-  @media (prefers-reduce-motion) {
-    .flicker {
-      animation: none;
-    }
-  }
+	@media (prefers-reduce-motion) {
+		.flicker {
+			animation: none;
+		}
+	}
 
 	@keyframes flicker {
 		0%,
@@ -38,13 +43,13 @@
 		53%,
 		57%,
 		100% {
-      opacity: 1;
+			opacity: 0;
 		}
 
 		20%,
 		24%,
 		55% {
-      opacity: 0.7;
+			opacity: 0.2;
 		}
 	}
 </style>
